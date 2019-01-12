@@ -46,7 +46,7 @@ class MoviePoster extends Component{
 //dumb Component - no props, no state 위에 class MoviePoster와 같아.
 function MovieGenre({genre}){
   return (
-    <span className="Movie__Genres">{genre}</span>
+    <span className="Movie__Genre">{genre}</span>
   );
 }
 
