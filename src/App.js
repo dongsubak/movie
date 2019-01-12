@@ -31,7 +31,7 @@ class App extends Component {
     }, 1000) */
   }
 
-  _renderMoives = () => {
+  _renderMovies = () => {
     const movies = this.state.movies.map(movie => {
       return <Movie
         title={movie.title}
@@ -63,7 +63,7 @@ class App extends Component {
   render() {
     return (
       <div className={this.state.movies ? "App" : "App--loading"}>
-         {this.state.movies ? this._renderMoives() : 'Loading'}
+         {this.state.movies ? this._renderMovies() : 'Loading'}
       </div>
     );
   }
